@@ -18,11 +18,12 @@ window.onscroll=function(){
 //handle click on scroll down button in bottom of main banner
 let scrollDowm=document.querySelector("header .scroll-down");
 let navBar=document.querySelector("header nav").offsetHeight;
-console.log(navBar);
 scrollDowm.addEventListener("click",function(){
   aboutusOffsetTop=document.querySelector(".about-us").offsetTop
+  console.log(navBar +" "+aboutusOffsetTop +" "+window.pageYOffset );
+
   window.scrollBy({
-    top: aboutusOffsetTop - navBar ,
+    top: aboutusOffsetTop - window.pageYOffset - navBar ,
     behavior : "smooth"
 })
 })
