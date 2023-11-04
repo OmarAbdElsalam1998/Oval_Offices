@@ -776,6 +776,7 @@ header .main-banner .content p{
   }
   .free-services .box:hover{
     transform: translateY(-10px);
+    color: #FFF;
   }
   .free-services .box:hover .inner .image .dark{
     display: none;
