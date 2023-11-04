@@ -1477,7 +1477,7 @@ footer .follow-us ul li a:hover{
     padding:15px 10px;
     color: #FFF;
     text-align: center;
-    z-index: 99;
+    z-index: 9999999;
     font-family: "NotoKufiArabic-Medium",monospace,sans-serif;
     transition: all .6s ease-in-out;
     border-radius: 10px;
