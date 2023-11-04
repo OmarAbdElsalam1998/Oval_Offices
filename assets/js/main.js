@@ -84,7 +84,7 @@ popUpBtn.forEach(btn=>{
     document.body.style.overflow="hidden";
     popUpContainer.addEventListener("click",function(){
       this.classList.remove("show");
-      document.body.style.overflow="scroll";
+      document.body.style.overflowY="scroll";
   
     })
     popUpInner.addEventListener("click",function(e){
@@ -92,7 +92,8 @@ popUpBtn.forEach(btn=>{
     })
     closePopupBtn.addEventListener("click",function(){
       popUpContainer.classList.remove("show");
-      document.body.style.overflow="scroll";
+      document.body.style.overflowY="scroll";
+
   
     })
     //handle images slider on offices details pop up
