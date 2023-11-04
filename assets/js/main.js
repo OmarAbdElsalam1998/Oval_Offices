@@ -23,7 +23,7 @@ scrollDowm.addEventListener("click",function(){
   console.log(navBar +" "+aboutusOffsetTop +" "+window.pageYOffset );
 
   window.scrollBy({
-    top: aboutusOffsetTop - window.pageYOffset - navBar ,
+    top: aboutusOffsetTop - window.pageYOffset - navBar,
     behavior : "smooth"
 })
 })
