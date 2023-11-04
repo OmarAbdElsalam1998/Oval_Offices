@@ -25,6 +25,10 @@ body{
     font-display: swap;
 
 }
+::selection{
+    background-color:var(--secondary-color);
+    
+    }
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
@@ -699,6 +703,7 @@ header .main-banner .content p{
     font-family:"NotoKufiArabic-Medium",sans-serif;
 
 }
+
 @media (max-width:767px) {
     .free-services{
         padding: 70px 0 ;
@@ -716,6 +721,8 @@ header .main-banner .content p{
     justify-content: center;
     margin-bottom: 25px;
     transition: all .4s ease-in-out;
+    user-select: none;
+
 
   }
   .free-services .box::before{
@@ -1016,7 +1023,7 @@ header .main-banner .content p{
       background-color: #FFF;
       padding:30px;
       border-radius: 12px;
-      transform: translateY(30px);
+      transform: translateY(-10px);
       transition: all .3s ease-in-out;
 
   
@@ -1031,18 +1038,18 @@ header .main-banner .content p{
         height:100%;
         background-color: #FFF;
         padding:60px 10px 100px 10px;
-        border-radius: 12px;
         transform: translateY(100vh);
         transition: all .4s ease-in-out;
+        border-radius: 40px;
+
   
     
     }
   }
   .our-services .pop-up.show .inner{
   
-    transform: translateY(30px);
+    transform: translateY(10px);
     z-index: 99999999;
-    border-radius: 40px;
 
   
 

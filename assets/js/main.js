@@ -121,7 +121,7 @@ popUpBtn.forEach(btn=>{
 
   
 $('#ourServices').owlCarousel({
-    loop: true,
+    loop: false,
     margin: 10,
     nav: true,
     rewindNav:false,
