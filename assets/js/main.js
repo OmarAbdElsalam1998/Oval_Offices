@@ -127,7 +127,7 @@ $('#ourServices').owlCarousel({
     margin: 10,
     nav: true,
     rewindNav:false,
-    autoplay: true,
+    autoplay: false,
     rtl:true,
   
     navText: [

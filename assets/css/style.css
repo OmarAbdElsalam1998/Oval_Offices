@@ -10,7 +10,7 @@ body{
     /* --brand-color:#7462F4; */
     --secondary-color:#802be7;
     --third-color:#FFF;
-    --fourth-color:#FF9800;
+    --fourth-color:#7a7256;
 
 }
 @font-face {
@@ -565,6 +565,7 @@ header .scroll-down span{
         text-decoration: none;
         color: #FFF;
     }
+ 
 
  
 
@@ -579,9 +580,19 @@ header .main-banner{
 header .main-banner .content h1{
     color: var(--third-color);
     font-family:"NotoKufiArabic-Bold",sans-serif;
-    font-size: 45px;
+    font-size: 55px;
     font-weight: bold;
     margin-bottom: 40px;
+}
+@media (max-width:768px) {
+    header .main-banner .content h1{
+        color: var(--third-color);
+        font-family:"NotoKufiArabic-Bold",sans-serif;
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    
 }
 header .main-banner .content p{
     color: var(--brand-color);
@@ -593,12 +604,7 @@ header .main-banner .content p{
 
 
 @media (max-width:1200px){
-    header .main-banner .content h1{
-        font-family:"NotoKufiArabic-Bold",sans-serif;
-        font-size: 55px;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
+   
     header .main-banner .content p{
        
         margin-bottom: 0px;
@@ -709,53 +715,59 @@ header .main-banner .content p{
         padding: 70px 0 ;
     }
 }  
-.free-services .box{
-    padding: 3px;
-    position: relative;
-    border-radius: 16px;
-    height: 200px;
-    overflow: hidden;
-    background-color: #EEE;
-    display: flex;
-    align-items:center ;
-    justify-content: center;
-    margin-bottom: 25px;
-    transition: all .4s ease-in-out;
-    user-select: none;
-
-
-  }
-  .free-services .box::before{
-    content: "";
-    position: absolute;
-    width: 47%;
-    height: 168%;
-    background:#FF9800   ;
-    transform-origin: center;
-   
+@media (min-width:768px){
+    .free-services .box{
+        padding: 3px;
+        position: relative;
+        border-radius: 16px;
+        height: 200px;
+        overflow: hidden;
+        background-color: #EEE;
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+        margin-bottom: 25px;
+        transition: all .4s ease-in-out;
+        user-select: none;
     
-  }
-  .free-services .box:hover::before{
-    animation: rotate 5s linear infinite;
-
-
-  }
-  .free-services .box::after{
-    content: "";
-    position: absolute;
-    background-color: #FFF;
-    inset: 3px;
-    border-radius: 14px;
-    transition: all .4s ease-in-out;
-   
     
-  }
-  .free-services .box .inner{
-    text-align: center;
-    padding: 0 10px;
-    z-index: 999;
-  }
-  
+      }
+      .free-services .box::before{
+        content: "";
+        position: absolute;
+        width: 47%;
+        height: 168%;
+        background:var(--fourth-color)   ;
+        transform-origin: center;
+       
+        
+      }
+      .free-services .box:hover::before{
+        animation: rotate 5s linear infinite;
+    
+    
+      }
+      .free-services .box::after{
+        content: "";
+        position: absolute;
+        background-color: #FFF;
+        inset: 3px;
+        border-radius: 14px;
+        transition: all .4s ease-in-out;
+       
+        
+      }
+      .free-services .box .inner{
+        text-align: center;
+        padding: 0 10px;
+        z-index: 999;
+      }
+      .free-services .box:hover{
+        transform: translateY(-10px);
+        color: #FFF;
+      }
+
+}
 
   .free-services .box .inner .image{
     position: relative;
@@ -781,10 +793,7 @@ header .main-banner .content p{
     border-radius: 50%;
     background-color: #e2e2e2;
   }
-  .free-services .box:hover{
-    transform: translateY(-10px);
-    color: #FFF;
-  }
+
   .free-services .box:hover .inner .image .dark{
     display: none;
   }
@@ -801,7 +810,7 @@ header .main-banner .content p{
   }
  
   .free-services .box .inner img{
-    width:90px;
+    width:60px;
     position: relative;
     display: block;
     z-index: 1;
@@ -838,6 +847,41 @@ header .main-banner .content p{
     }
     
   }
+    
+@media (max-width:768px){
+    .free-services .box{
+        justify-content: start;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+        border:1px solid #EEE;
+        border-radius: 12px;
+        margin-bottom: 10px;
+    }
+    .free-services .box:hover{
+        background-color: var(--secondary-color);
+        color: #FFF     ;
+    }
+    .free-services .box .inner{
+        display: flex;
+        align-items: center;
+    
+       text-align: start;
+        gap:20px;
+    }
+     
+  .free-services .box .inner img{
+    width:30px;
+    position: relative;
+    display: block;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+    margin: auto;
+  }
+  .free-services .box .inner .image::after{
+    display: none;
+  }
+}
   
 /* End Free Services Style */
 
@@ -945,7 +989,7 @@ header .main-banner .content p{
 }
 .our-services .box .box-image img{
     width: 100%;
-    height: 200px;
+    height: 250px;
     margin: auto;
     opacity: .7;
 }
