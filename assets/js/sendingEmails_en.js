@@ -108,7 +108,7 @@ submit_button.addEventListener("click",(e)=>{
              }
              else{
                 alertDiv.classList.add("error","active")
-                alertMessage.innerHTML=`<img src="assets/images/error.webp" loading="lazy" alt=""><span >Sorry, you are only allowed to send one message</span>`;
+                alertMessage.innerHTML=`<img src="../assets/images/error.webp" loading="lazy" alt=""><span >Sorry, you are only allowed to send one message</span>`;
                 submit_button.innerHTML="send";
                 submit_button.disabled = false;
 
@@ -157,7 +157,7 @@ function sendEmail(){
     emailjs.send(serviceID,templateID,params)
     .then(function() {
         alertDiv.classList.add("success","active");
-        alertMessage.innerHTML=`<img src="assets/images/success.webp" loading="lazy" alt=""><span >Your Message Sent Successfully</span>`;
+        alertMessage.innerHTML=`<img src="../assets/images/success.webp" loading="lazy" alt=""><span >Your Message Sent Successfully</span>`;
         submit_button.disabled = false;
         submit_button.innerHTML="send";
 
@@ -171,7 +171,7 @@ function sendEmail(){
         },5000);
     }, function(error) {
         alertDiv.classList.add("error","active")
-        alertMessage.innerHTML=`<img src="assets/images/error.webp" loading="lazy" alt=""><span >The message could not be sent/span>`;
+        alertMessage.innerHTML=`<img src="../assets/images/error.webp" loading="lazy" alt=""><span >The message could not be sent/span>`;
         interval= setTimeout(()=>{
         alertDiv.classList.remove("active","error");
 
