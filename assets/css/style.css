@@ -25,6 +25,12 @@ body{
     font-display: swap;
 
 }
+@font-face {
+    font-family:"Ubuntu-Medium";
+    src: url(../fonts/Ubuntu-Medium.ttf);
+    font-display: swap;
+
+}
 ::selection{
     background-color:var(--secondary-color);
     color: #FFF;
@@ -683,6 +689,7 @@ header video{
     padding: 120px 0 ;
     overflow: hidden;
     font-family:"NotoKufiArabic-Medium",sans-serif;
+    background-color: #FBFBFB;
 
 }
 

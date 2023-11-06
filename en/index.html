@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مكاتب أوفل</title>
+    <title>Ovel Offices</title>
     <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/aos.css">
@@ -12,6 +12,11 @@
     <style>
       body{
         direction: ltr;
+        font-family:"Ubuntu-Medium",sans-serif !important;
+      }
+      *{
+        font-family:"Ubuntu-Medium",sans-serif !important;
+
       }
       @keyframes Hmoving {
           0%{
@@ -24,6 +29,47 @@
               transform: translateX(0px);
           }
           
+      }
+
+      /* Start Header Section */
+      @media (max-width:992px) {
+        header .navbar.show {
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(5, 5, 5, 0.395);
+        padding: 0;
+        z-index: 99999;
+    }
+
+    header .navbar ul{
+        display: block;
+        position: fixed;
+        top: 0;
+        left:-300px;
+        width: 300px;
+        height: 100vh;
+        background-color: var(--brand-color);
+        transition: all .3s ease-in-out;
+        color: #FFF;
+        
+    }
+    header .navbar.show ul{
+        left: 0;
+        padding: 80px 0;
+        position: relative;
+    }
+    header .navbar.show .close-aside{
+       
+        top: 20px;
+        right: 20px;
+        left: unset;
+        cursor: pointer;
+
+    }
+        
       }
       /* Start About us section */
       .about-us .image::before {
@@ -668,7 +714,7 @@
    <footer>
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-left">
+        <div class=" col-lg-6  col-xxl-4 mb-5 mb-lg-0" data-aos="fade-left">
           <div class="logo" >
             <img src="../assets/images/logo.webp" loading="lazy" alt="Logo">
             <p>Furnished offices and co-working spaces</p>
@@ -684,20 +730,20 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-4 mb-5 mb-lg-0">
+        <div class="col-lg-6 col-xxl-4 mb-5 mb-lg-0">
           <div class="contact" data-aos="fade-left" data-aos-delay="300">
-            <h3 class="heading">التواصل</h3>
-            <div class="address">
-              <span>
-                <span class="icon">
+            <h3 class="heading">Contact US</h3>
+            <div class="address d-flex align-items-center" >
+                <span class="icon me-2">
                   <img src="../assets/images/location.webp" loading="lazy" alt="phone">
                 </span>
-                <a href="https://www.google.com/maps/place/Oval+Offices+%7C+%D9%85%D9%83%D8%A7%D8%AA%D8%A8+%D8%A7%D9%88%DA%A4%D9%84%E2%80%AD/@21.5656058,39.185573,17z/data=!4m6!3m5!1s0x15c3d17fa524ff63:0x8868c27a66030775!8m2!3d21.5656848!4d39.1856799!16s%2Fg%2F11scpbs5lw?hl=en-US&entry=ttu">King Fahd Road - Al Faisaliah - Jeddah - Saudi Arabia</a>
-              </span>
+                <span>               
+                   <a href="https://www.google.com/maps/place/Oval+Offices+%7C+%D9%85%D9%83%D8%A7%D8%AA%D8%A8+%D8%A7%D9%88%DA%A4%D9%84%E2%80%AD/@21.5656058,39.185573,17z/data=!4m6!3m5!1s0x15c3d17fa524ff63:0x8868c27a66030775!8m2!3d21.5656848!4d39.1856799!16s%2Fg%2F11scpbs5lw?hl=en-US&entry=ttu">King Fahd Road - Al Faisaliah - Jeddah - Saudi Arabia</a>
+                </span>
             </div>
             <div class="email">
-              <span>
-                <span class="icon">
+              <span  >
+                <span class="icon me-2">
                   <img src="../assets/images/email.webp" loading="lazy" alt="phone">
                 </span>
                 <a href="mailto:Ovaloffices@gmail.com">Ovaloffices@gmail.com</a>
@@ -705,16 +751,16 @@
             </div>
             <div class="phone">
               <span>
-                <span class="icon">
+                <span class="icon me-2">
                   <img src="../assets/images/phone.webp" loading="lazy" alt="phone">
                 </span>
-                <a style="dire" href="tel:+966567892900">0567892900</a>
+                <a  href="tel:+966567892900">0567892900</a>
               </span>
             </div>
           </div>
         </div>
     
-        <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-left" data-aos-delay="600">
+        <div class="col-lg-12  col-xxl-4 mb-5 mb-lg-0" data-aos="fade-left" data-aos-delay="600">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3710.5202677580996!2d39.185573!3d21.5656058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d17fa524ff63%3A0x8868c27a66030775!2zT3ZhbCBPZmZpY2VzIHwg2YXZg9in2KrYqCDYp9mI2qTZhA!5e0!3m2!1sen!2sus!4v1699289109807!5m2!1sen!2sus"  style="width:100%;height: 300px;border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
