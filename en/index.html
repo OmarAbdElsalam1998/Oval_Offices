@@ -9,6 +9,85 @@
     <link rel="stylesheet" href="../assets/css/aos.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="shortcut icon" href="../assets/images/logo_sticky.webp" type="image/x-icon">
+    <style>
+      body{
+        direction: ltr;
+      }
+      @keyframes Hmoving {
+          0%{
+              transform: translateX(0px);
+          }
+          50%{
+              transform: translateX(125px);
+          }  
+          100%{
+              transform: translateX(0px);
+          }
+          
+      }
+      /* Start About us section */
+      .about-us .image::before {
+        content: "";
+        position: absolute;
+        top: -30px;
+        right: -30px;
+        left: unset;
+        width: 100%;
+        height: 100%;
+        background-color: var(--fourth-color);
+        border-radius: 20px;
+        transform: rotate(10deg);
+        z-index: 1;
+      }
+      @media (max-width: 767px){
+        .about-us .content {
+            margin-bottom: 60px;
+        }
+      }
+
+        /*End About US  */
+      .our-services .pop-up .inner .description h3::after{
+        content:"";
+        position: absolute;
+        bottom:0px;
+        right:unset;
+        left: 0;
+      }
+      .our-services .pop-up .inner .close-pop-up {
+        position: fixed;
+        top: 20px;
+        right:20px;
+        left: unset;
+        padding: 14px;
+        box-shadow: 0 0 23px #a6a6a6;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+    @media  (max-width:1200px){
+ 
+      .our-services .pop-up .inner .close-pop-up {
+        position: fixed;
+        top:5px;
+        left:5px;
+        right: unset;
+        box-shadow: unset;
+       
+    }
+  }
+
+      /* Start Footer Section */
+      footer .heading:after {
+        content: "";
+        position: absolute;
+        left: 1px;
+        right: unset;
+        bottom: 0;
+        width: 50px;
+        height: 4px;
+        border-radius: 10px;
+        background-color: var(--fourth-color);
+    }
+    </style>
 </head>
 <body>
 
@@ -26,10 +105,17 @@
             <div class="close-aside">
               <img src="../assets/images/close.webp" loading="lazy" alt="X">
             </div>
-            <li><a href="#about-us">من نحن</a></li>
-            <li><a href="#free-services">الخدمات المجانية</a></li>
-            <li><a href="#Our-services">مساحات العمل</a></li>
-            <li><a href="#contact-us">إتصل بنا</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#Our-services">Work Spaces</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="#free-services">Free services</a></li>
+            <li><a href="https://omarabdelsalam1998.github.io/Oval_Offices/ar" class="d-flex align-items-center justify-content-center">
+              <div class="language-images pe-2">
+                <img class="sticky" src="../assets/images/language.webp" loading="lazy" alt="language">
+                <img class="default" src="../assets/images/language_white.webp" loading="lazy" alt="language">
+              </div>
+              <span>العربية</span>
+            </a></li>
 
   
           </ul>
@@ -45,8 +131,8 @@
       <div class="container h-100 ">
         <div class="row h-100 d-flex align-items-center">
           <div class="col-12 text-center"  >
-            <div class="content" data-aos="fade-left">
-              <h1>مكاتب مؤثثة ومساحات عمل مشتركة</h1>
+            <div class="content" data-aos="fade-right">
+              <h1>Furnished offices and co-working spaces</h1>
             </div>
           </div>
          
@@ -62,6 +148,9 @@
     <div class="scroll-down">
       <span></span>
     </div>
+    <video autoplay loop muted>
+      <source src="../assets/videos/video.mp4" type="video/mp4">
+    </video>
     
   </header>
 
@@ -73,17 +162,17 @@
     <div class="container">
       
       <div class="row d-flex align-items-center">
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-right">
           <div class="content">
-            <h2 class="special-heading " data-aos="fade-left">
+            <h2 class="special-heading " >
       
-              <span>من نحن</span>
+              <span>About US</span>
               
             </h2>
-            <p>نحن نجعل مساحات العمل مشرقة وممتعة، ويمكن تغييرها لتناسب احتياجات كل شخص أو مجموعة تريد أن تتمتع الشركات بالحرية في اتخاذ خياراتها الخاصة وأن تتمتع ببيئة عمل مرنة. لدينا مكاتب خاصة ومساحات مشتركة بها كل ما تحتاجه للاجتماعات فريقنا ودود ومنظم، حتى يتمكن الأشخاص من التركيز على عملهم ويكونوا أكثر إنتاجية.</p>
+            <p>Ovel offices in Jeddah: the ideal destination for companies seeking innovation and excellence. We provide cutting-edge co-working spaces and private offices, designed specifically to meet the needs of modern businesses. With our advanced facilities and creativity-stimulating environment, we provide the ideal place for your business to flourish and develop.</p>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-left">
           <div class="image">
             <img class="img-fluid" src="../assets/images/main_banner.webp" loading="lazy" alt="ABOUT US">
           </div>
@@ -95,209 +184,67 @@
 
   <!-- End aboutus Section -->
 
- <!-- Start Advantages Section -->
- <section class="free-services" id="free-services">
-
-  <div class="container">
-    <h2 class="special-heading " data-aos="fade-left">
-        
-      <span>الخدمات المجانية</span>
-      
-  </h2>
-    <div class="row">
-      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="box">
-          <div class="inner">
-             <div class="image">
-               <img loading="lazy" alt="icon" class="white" src="../assets/images/smart-door_white.webp">
-               <img loading="lazy" alt="icon" class="dark" src="../assets/images/smart-door.webp">
-
-             </div>
-             <h4>دخول زكي</h4>  
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="box">
-          <div class="inner">
-             <div class="image">
-               <img loading="lazy" alt="icon" class="white" src="../assets/images/wifi_white.webp">
-               <img loading="lazy" alt="icon" class="dark" src="../assets/images/wifi.webp">
-
-             </div>
-             <h4>إنترنت فائق السرعة</h4>  
-            </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="box">
-          <div class="inner">
-            <div class="image">
-              <img loading="lazy" alt="icon" class="white" src="../assets/images/printer_white.webp">
-               <img loading="lazy" alt="icon" class="dark" src="../assets/images/printer.webp">
-            </div>
-            <h4>خدمات الطباعة</h4>  
-            </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="box">
-          <div class="inner">
-            <div class="image">
-              <img loading="lazy" alt="icon" class="white" src="../assets/images/coffee_white.webp">
-              <img loading="lazy" alt="icon" class="dark" src="../assets/images/coffee.webp">
-            </div>
-            <h4>الضيافة</h4>  
-            </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="box">
-          <div class="inner">
-            <div class="image">
-              <img loading="lazy" alt="icon" class="white" src="../assets/images/phone_white.webp">
-              <img loading="lazy" alt="icon" class="dark" src="../assets/images/phone-call.webp">
-            </div>
-            <h4>غرفة مكالمات</h4>  
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="box">
-          <div class="inner">
-            <div class="image">
-              <img loading="lazy" alt="icon" class="white" src="../assets/images/cleaning-white.webp">
-              <img loading="lazy" alt="icon" class="dark" src="../assets/images/cleaning-cart.webp">
-            </div>
-            <h4>خدمة النظافة</h4>  
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="box">
-          <div class="inner">
-            <div class="image">
-              <img loading="lazy" alt="icon" class="white" src="../assets/images/meeting_white.webp">
-              <img loading="lazy" alt="icon" class="dark" src="../assets/images/meeting.webp">
-            </div>
-            <h4>قاعات إجتماعات</h4>  
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="box">
-          <div class="inner">
-            <div class="image">
-              <img loading="lazy" alt="icon" class="white" src="../assets/images/cctv-camera_white.webp">
-              <img loading="lazy" alt="icon" class="dark" src="../assets/images/cctv-camera.webp">
-            </div>
-            <h4>كاميرات مراقية</h4>  
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="box">
-          <div class="inner">
-            <div class="image">
-              <img loading="lazy" alt="icon" class="white" src="../assets/images/package_white.webp">
-              <img loading="lazy" alt="icon" class="dark" src="../assets/images/package.webp">
-            </div>
-            <h4>توصيل طرود</h4>  
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="box">
-          <div class="inner">
-            <div class="image">
-              <img loading="lazy" alt="icon" class="white" src="../assets/images/sofa_white.webp">
-              <img loading="lazy" alt="icon" class="dark" src="../assets/images/sofa.webp">
-            </div>
-            <h4>تأثيت حسب الرغبة</h4>  
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="box">
-          <div class="inner">
-            <div class="image">
-              <img loading="lazy" alt="icon" class="white" src="../assets/images/worker_white.webp">
-              <img loading="lazy" alt="icon" class="dark" src="../assets/images/worker.webp">
-            </div>
-            <h4>خصم 50% علي مساحات العمل المشتركة</h4>  
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="box">
-          <div class="inner">
-            <div class="image">
-              <img loading="lazy" alt="icon" class="white" src="../assets/images/address_white.webp">
-              <img loading="lazy" alt="icon" class="dark" src="../assets/images/address.webp">
-            </div>
-            <h4>خدمة العنوان الوطني</h4>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
- </section>
- <!-- End Advantages Section -->
-
 
   
   <!-- Start Our work spaces Section -->
   <section class="our-services" id="Our-services">
     <div class="container">
-      <h2 class="special-heading " data-aos="fade-left">
+      <h2 class="special-heading " data-aos="fade-right">
         
-        <span>مساحات العمل</span>
+        <span>Workspaces</span>
         
     </h2>
-    <div class="owl-carousel owl-theme " id="ourServices">
-      <div class="item">
-        <div class="box" data-aos="flip-right">
-          <div class="box-image">
-            <img class="img-fluid" src="../assets/images/office1.webp" loading="lazy" alt="">
-
-          </div>
-          <div class="box-info">
-            <h3>المكاتب العادية</h3>
-          </div>
-
-          <div class="actions">
-            <button data-target="popUp-one" class="brand-btn pop-up-btn"><img src="../assets/images/eye.webp" loading="lazy" alt=""></button>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="box" data-aos="flip-right">
-          <div class="box-image">
-            <img class="img-fluid" src="../assets/images/office2.webp" loading="lazy" alt="">
-
-          </div>
-          <div class="box-info">
-            <h3>المكاتب التنفيذية</h3>
-          </div>
-
-          <div class="actions">
-            <button data-target="popUp-two" class="brand-btn pop-up-btn"><img src="../assets/images/eye.webp" loading="lazy" alt=""></button>
+    <div class="row">
+      <div class="col-sm-6 col-md-4 mb-3">
+        <div class="item">
+          <div class="box" data-aos="flip-right">
+            <div class="box-image">
+              <img class="img-fluid" src="../assets/images/special_Offices1.webp" loading="lazy" alt="">
+  
+            </div>
+            <div class="box-info">
+              <h3>Private Offices</h3>
+            </div>
+  
+            <div class="actions">
+              <button data-target="popUp-one" class="brand-btn pop-up-btn"><img src="../assets/images/eye.webp" loading="lazy" alt=""></button>
+            </div>
           </div>
         </div>
+       
       </div>
-      <div class="item">
-        <div class="box" data-aos="flip-right">
-          <div class="box-image">
-            <img class="img-fluid" src="../assets/images/office3.webp" loading="lazy" alt="">
-
+      <div class="col-sm-6 col-md-4 mb-3">
+        <div class="item">
+          <div class="box" data-aos="flip-right">
+            <div class="box-image">
+              <img class="img-fluid" src="../assets/images/sharedOffices1.webp" loading="lazy" alt="">
+  
+            </div>
+            <div class="box-info">
+              <h3>Shared Offices</h3>
+            </div>
+  
+            <div class="actions">
+              <button data-target="popUp-two" class="brand-btn pop-up-btn"><img src="../assets/images/eye.webp" loading="lazy" alt=""></button>
+            </div>
           </div>
-          <div class="box-info">
-            <h3>قاعات الإجتماعات</h3>
-          </div>
-
-          <div class="actions">
-            <button data-target="popUp-three" class="brand-btn pop-up-btn"><img src="../assets/images/eye.webp" loading="lazy" alt=""></button>
+        </div>
+        
+      </div>
+      <div class="col-sm-6 col-md-4 mb-3">
+        <div class="item">
+          <div class="box" data-aos="flip-right">
+            <div class="box-image">
+              <img class="img-fluid" src="../assets/images/meetingRoom1.webp" loading="lazy" alt="">
+  
+            </div>
+            <div class="box-info">
+              <h3>Meeting Rooms</h3>
+            </div>
+  
+            <div class="actions">
+              <button data-target="popUp-three" class="brand-btn pop-up-btn"><img src="../assets/images/eye.webp" loading="lazy" alt=""></button>
+            </div>
           </div>
         </div>
       </div>
@@ -306,117 +253,117 @@
     <div class="pop-up" id="popUp-one">
       <div class="inner">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-xl-6">
             <div class="images">
               <div class="selected-image">
-                <img class="img-fluid"  src="../assets/images/office1.webp" loading="lazy" alt="">
+                <img class="img-fluid"  src="../assets/images/special_Offices1.webp" loading="lazy" alt="">
 
               </div>
               <div class="select-image d-flex align-items-center justify-content-between">
                 <div class="selected img">
-                  <img  src="../assets/images/office1.webp" loading="lazy" alt="">
+                  <img  src="../assets/images/special_Offices1.webp" loading="lazy" alt="">
                 </div>
                 <div class=" img">
-                  <img src="../assets/images/office2.webp" loading="lazy" alt="">
+                  <img src="../assets/images/special_Offices2.webp" loading="lazy" alt="">
                 </div>
                 <div class=" img">
-                  <img src="../assets/images/office3.webp" loading="lazy" alt="">
+                  <img src="../assets/images/special_Offices3.webp" loading="lazy" alt="">
                 </div>
                 <div class=" img">
-                  <img src="../assets/images/office4.webp" loading="lazy" alt="">
+                  <img src="../assets/images/special_Offices4.webp" loading="lazy" alt="">
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-xl-6">
              <div class="description">
-              <h3>المكاتب العادية</h3>
-              <span class="price">أسعار تبدأ من 2600 ريال سعودي</span>
+              <h3>Private Offices</h3>
+              <!-- <span class="price">أسعار تبدأ من 2600 ريال سعودي</span> -->
               <div class="offices-categories mb-3">
-                <h4>المكاتب المتاحة</h4>
+                <!-- <h4>المكاتب المتاحة</h4> -->
                 <ul>
-                  <li> - مكتب فردي مساحة 15 متر</li>
-                  <li> - مكتب من 3 ل 4 أفراد 18 متر</li>
-                  <li> - مكتب فردي 13 متر</li>
-                  <li> - مكتب مكتب 20 متر يكفي من 4 ل 6 أشخاص</li>
-                  <li> - مكتب  18 متر يكفي من 2 ل 5 أشخاص</li>
+                  <li> - An office space for one to two people, 15 square metres.</li>
+                  <li> - Office for 3 to 4 people, 18 square meters.</li>
+                  <li> - 20 square meter office for 4 to 6 people.</li>
                 </ul>
               </div>
               <div class="available-services mb-3">
-                <h4>الخدمات المتوفرة</h4>
+                <h4>Available services</h4>
                 <div class="d-flex flex-wrap align-items-center gap-2">
-                  <span class="service">ضيافة</span>
-                  <span class="service">كاميرات</span>
-                  <span class="service">بزنس لاونج </span>
-                  <span class="service">دورات مياة</span>
-                  <span class="service">قهوة</span>
+                  <span class="service">Smart entry</span>
+                  <span class="service">High-speed internet</span>
+                  <span class="service">Printing services</span>
+                  <span class="service">Hospitality</span>
+                  <span class="service">Call room</span>
+                  <span class="service">Cleaning service</span>
+                  <span class="service">Meeting rooms</span>
+                  <span class="service">security cameras</span>
+                  <span class="service">Parcel delivery</span>
+                  <span class="service">Furnished as desired</span>
+                  <span class="service">50% discount on co-working spaces</span>
+                  <span class="service">National address service</span>
                   
                 </div>
               </div>
               <div class="actions">
-                <a  href="https://wa.me/+966564664243?text=إستفسار عن المكاتب العادية" target="_blank" class="whatsapp-btn"><img src="../assets/images/whatsapp_white_icon.webp" loading="lazy" alt=""> إحجز الان</a>
+                <a  href="https://wa.me/+966567892900?text=إستفسار عن المكاتب الخاصة" target="_blank" class="whatsapp-btn"><img src="../assets/images/whatsapp_white_icon.webp" loading="lazy" alt="">Book Now</a>
               </div>
               
              </div>
           </div>
         </div>
         <div class="close-pop-up"> <img src="../assets/images/close_popup.webp" loading="lazy" alt=""></div>
-      </div>
+    </div>
     </div>
     <div class="pop-up" id="popUp-two">
       <div class="inner">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-xl-6">
             <div class="images">
               <div class="selected-image">
-                <img class="img-fluid"  src="../assets/images/office1.webp" loading="lazy" alt="">
+                <img class="img-fluid"  src="../assets/images/sharedOffices1.webp" loading="lazy" alt="">
 
               </div>
-              <div class="select-image d-flex align-items-center justify-content-between">
+              <div class="select-image d-flex align-items-center">
                 <div class="selected img">
-                  <img  src="../assets/images/office1.webp" loading="lazy" alt="">
+                  <img  src="../assets/images/sharedOffices1.webp" loading="lazy" alt="">
                 </div>
                 <div class=" img">
-                  <img src="../assets/images/office2.webp" loading="lazy" alt="">
+                  <img src="../assets/images/sharedOffices2.webp" loading="lazy" alt="">
                 </div>
-                <div class=" img">
-                  <img src="../assets/images/office3.webp" loading="lazy" alt="">
-                </div>
-                <div class=" img">
-                  <img src="../assets/images/office4.webp" loading="lazy" alt="">
-                </div>
+               
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-xl-6">
              <div class="description">
-              <h3>المكاتب التنفيذية</h3>
-              <span class="price"> أسعار تبدأ من 3200 ريال سعودي شامل جميع الخدمات</span>
+              <h3>Shared offices</h3>
+              <!-- <span class="price"> أسعار تبدأ من 3200 ريال سعودي شامل جميع الخدمات</span> -->
               <div class="offices-categories mb-3">
-                <h4>المكاتب المتاحة</h4>
+                <!-- <h4>المكاتب المتاحة</h4> -->
                 <ul>
-                  <li> - مكتب فردي مساحة 15 متر</li>
-                  <li> - مكتب من 3 ل 4 أفراد 18 متر</li>
-                  <li> - مكتب فردي 13 متر</li>
-                  <li> - مكتب مكتب 20 متر يكفي من 4 ل 6 أشخاص</li>
-                  <li> - مكتب  18 متر يكفي من 2 ل 5 أشخاص</li>
+                  <li> - Co-working space with 15 hours use of the meeting room.</li>
+                  <li> - Single office 13 meters</li>              
                 </ul>
               </div>
               <div class="available-services mb-3">
-                <h4>الخدمات المتوفرة</h4>
+                <h4>Available services</h4>
                 <div class="d-flex flex-wrap align-items-center gap-2">
-                  <span class="service">ضيافة</span>
-                  <span class="service">كاميرات</span>
-                  <span class="service">بزنس لاونج </span>
-                  <span class="service">دورات مياة</span>
-                  <span class="service">قهوة</span>
+                  <span class="service">Smart entry</span>
+                  <span class="service">High-speed internet</span>
+                  <span class="service">Printing services</span>
+                  <span class="service">Hospitality</span>
+                  <span class="service">Call room</span>
+                  <span class="service">Private locker</span>
+                  <span class="service">cleanliness </span>
+                  <span class="service">15 hours meeting room</span>
                   
                 </div>
               </div>
               <div class="actions">
-                <a href="https://wa.me/+966564664243?text=إستفسار عن المكاتب التنفيذية" target="_blank" class="whatsapp-btn"><img src="../assets/images/whatsapp_white_icon.webp" loading="lazy" alt=""> إحجز الان</a>
+                <a href="https://wa.me/+966567892900?text=إستفسار عن المكاتب المشتركة" target="_blank" class="whatsapp-btn"><img src="../assets/images/whatsapp_white_icon.webp" loading="lazy" alt="">Book Now</a>
               </div>
               
              </div>
@@ -428,54 +375,46 @@
     <div class="pop-up" id="popUp-three">
       <div class="inner">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-xl-6">
             <div class="images">
               <div class="selected-image">
-                <img class="img-fluid"  src="../assets/images/office1.webp" loading="lazy" alt="">
+                <img class="img-fluid"  src="../assets/images/meetingRoom1.webp" loading="lazy" alt="">
 
               </div>
-              <div class="select-image d-flex align-items-center justify-content-between">
+              <div class="select-image d-flex align-items-center">
                 <div class="selected img">
-                  <img  src="../assets/images/office1.webp" loading="lazy" alt="">
+                  <img  src="../assets/images/meetingRoom1.webp" loading="lazy" alt="">
                 </div>
                 <div class=" img">
-                  <img src="../assets/images/office2.webp" loading="lazy" alt="">
+                  <img src="../assets/images/meetingRoom2.webp" loading="lazy" alt="">
                 </div>
-                <div class=" img">
-                  <img src="../assets/images/office3.webp" loading="lazy" alt="">
-                </div>
-                <div class=" img">
-                  <img src="../assets/images/office4.webp" loading="lazy" alt="">
-                </div>
+              
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-xl-6">
              <div class="description">
-              <h3>قاعات الإجتماعات</h3>
-              <span class="price">أسعار تبدأ من 2600 ريال سعودي</span>
+              <h3>Meeting rooms</h3>
+              <!-- <span class="price">أسعار تبدأ من 2600 ريال سعودي</span> -->
               <div class="offices-categories mb-3">
-                <h4>القاعات المتاحة</h4>
+                <!-- <h4>القاعات المتاحة</h4> -->
                 <ul>
-                  <li> - قاعة صغيرة 6 أفراد    </li>
-                  <li> - قاعة كبيرة 12 أفراد    </li>
+                  <li> - A hall for 6 people, equipped with the latest technology, for 100 riyals</li>
+                  <li> - A hall suitable for 13 people, equipped with the latest technology, for 200 riyals</li>
                   
                 </ul>
               </div>
               <div class="available-services mb-3">
-                <h4>الخدمات المتوفرة</h4>
+                <h4>Available services</h4>
                 <div class="d-flex flex-wrap align-items-center gap-2">
-                  <span class="service">ضيافة</span>
-                  <span class="service">كاميرات</span>
-                  <span class="service">بزنس لاونج </span>
-                  <span class="service">دورات مياة</span>
-                  <span class="service">قهوة</span>
+                  <span class="service">hospitality</span>
+                 
                   
-                </div>
+                </div>  
               </div>
               <div class="actions">
-                <a href="https://wa.me/+966564664243?text=إستفسار عن قاعات الإجتماعات" target="_blank" class="whatsapp-btn"><img src="../assets/images/whatsapp_white_icon.webp" loading="lazy" alt=""> إحجز الان</a>
+                <a href="https://wa.me/+966567892900?text=إستفسار عن قاعات الإجتماعات" target="_blank" class="whatsapp-btn"><img src="../assets/images/whatsapp_white_icon.webp" loading="lazy" alt="">Book Now</a>
               </div>
               
              </div>
@@ -496,35 +435,35 @@
      
       <div class="row">
         <div class="col-lg-6">
-          <div class="text" data-aos="fade-left">
+          <div class="text" data-aos="fade-right">
             <h2 class="special-heading">
              
-              <span>إتصل بنا</span>
+              <span>Contact Us</span>
               
             </h2> 
-            <p>لا تشعر بالحرج واتصل بنا في أي وقت </p>
+            <p>Don't feel embarrassed and contact us at any time</p>
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="contact-form" data-aos="fade-right">
+          <div class="contact-form" data-aos="fade-left">
             <form id="contact_Form">
               <div class="form-group mb-3">
-                <input id="customerName" type="text" placeholder="الإسم">
+                <input id="customerName" type="text" placeholder="Name">
                 <small class="error-message"></small>
               </div>
               <div class="form-group mb-3">
-                <input id="email" type="text" placeholder="البريد الإلكتروني">
+                <input id="email" type="text" placeholder="Email">
                 <small class="error-message"></small>
               </div>
               <div  class="form-group mb-3">
-                <input id="phone" type="tel" placeholder="الجوال">
+                <input id="phone" type="tel" placeholder="Phone">
                 <small class="error-message"></small>
               </div>
               <div class="form-group mb-3">
-                <textarea id="message" placeholder="إكتب طلبك" ></textarea>
+                <textarea id="message" placeholder="Your Message" ></textarea>
                 <small class="error-message"></small>
               </div>
-              <button class="brand-btn" id="submit_form">إرسال</button>
+              <button class="brand-btn" id="submit_form">Send</button>
             </form>
           </div>
         </div>
@@ -534,28 +473,234 @@
 
   <!-- End Contact Us Section -->
     
+   <!-- Start Advantages Section -->
+ <section class="free-services" id="free-services">
+
+  <div class="container">
+    <h2 class="special-heading " data-aos="fade-right">
+        
+      <span>Free services</span>
+      
+  </h2>
+    <div class="row">
+      <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+        <div class="box">
+          <div class="inner">
+             <div class="image">
+               <img loading="lazy" alt="icon" class="white" src="../assets/images/smart-door_white.webp">
+               <img loading="lazy" alt="icon" class="dark" src="../assets/images/smart-door.webp">
+
+             </div>
+             <h4>smart entry</h4>  
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+        <div class="box">
+          <div class="inner">
+             <div class="image">
+               <img loading="lazy" alt="icon" class="white" src="../assets/images/wifi_white.webp">
+               <img loading="lazy" alt="icon" class="dark" src="../assets/images/wifi.webp">
+
+             </div>
+             <h4>High-speed internet</h4>  
+            </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+        <div class="box">
+          <div class="inner">
+            <div class="image">
+              <img loading="lazy" alt="icon" class="white" src="../assets/images/printer_white.webp">
+               <img loading="lazy" alt="icon" class="dark" src="../assets/images/printer.webp">
+            </div>
+            <h4>Printing services</h4>  
+            </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+        <div class="box">
+          <div class="inner">
+            <div class="image">
+              <img loading="lazy" alt="icon" class="white" src="../assets/images/coffee_white.webp">
+              <img loading="lazy" alt="icon" class="dark" src="../assets/images/coffee.webp">
+            </div>
+            <h4>Hospitality</h4>  
+            </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+        <div class="box">
+          <div class="inner">
+            <div class="image">
+              <img loading="lazy" alt="icon" class="white" src="../assets/images/phone_white.webp">
+              <img loading="lazy" alt="icon" class="dark" src="../assets/images/phone-call.webp">
+            </div>
+            <h4>Call room</h4>  
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+        <div class="box">
+          <div class="inner">
+            <div class="image">
+              <img loading="lazy" alt="icon" class="white" src="../assets/images/cleaning-white.webp">
+              <img loading="lazy" alt="icon" class="dark" src="../assets/images/cleaning-cart.webp">
+            </div>
+            <h4>Cleaning service</h4>  
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+        <div class="box">
+          <div class="inner">
+            <div class="image">
+              <img loading="lazy" alt="icon" class="white" src="../assets/images/meeting_white.webp">
+              <img loading="lazy" alt="icon" class="dark" src="../assets/images/meeting.webp">
+            </div>
+            <h4>Meeting rooms</h4>  
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+        <div class="box">
+          <div class="inner">
+            <div class="image">
+              <img loading="lazy" alt="icon" class="white" src="../assets/images/cctv-camera_white.webp">
+              <img loading="lazy" alt="icon" class="dark" src="../assets/images/cctv-camera.webp">
+            </div>
+            <h4>security cameras</h4>  
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+        <div class="box">
+          <div class="inner">
+            <div class="image">
+              <img loading="lazy" alt="icon" class="white" src="../assets/images/package_white.webp">
+              <img loading="lazy" alt="icon" class="dark" src="../assets/images/package.webp">
+            </div>
+            <h4>Parcel delivery</h4>  
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+        <div class="box">
+          <div class="inner">
+            <div class="image">
+              <img loading="lazy" alt="icon" class="white" src="../assets/images/sofa_white.webp">
+              <img loading="lazy" alt="icon" class="dark" src="../assets/images/sofa.webp">
+            </div>
+            <h4>Furnished as desired</h4>  
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+        <div class="box">
+          <div class="inner">
+            <div class="image">
+              <img loading="lazy" alt="icon" class="white" src="../assets/images/worker_white.webp">
+              <img loading="lazy" alt="icon" class="dark" src="../assets/images/worker.webp">
+            </div>
+            <h4>50%- discount on co-working spaces</h4>  
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+        <div class="box">
+          <div class="inner">
+            <div class="image">
+              <img loading="lazy" alt="icon" class="white" src="../assets/images/address_white.webp">
+              <img loading="lazy" alt="icon" class="dark" src="../assets/images/address.webp">
+            </div>
+            <h4>National address service</h4>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+ </section>
+ <!-- End Advantages Section -->
+
+   <!-- Start our Customers Section -->
+   <!-- <section class="our-customers" id="Our-Customers">
+    <div class="container">
+      <h2 class="special-heading " data-aos="fade-left">
+        
+        <span>عملائنا</span>
+        
+      </h2>
+      <div class="owl-carousel owl-theme " id="our-customers">
+        <div class="item">
+          <div class="box" data-aos="flip-right">
+            <img src="../assets/images/customer1.webp" loading="lazy" alt="">
+          </div>
+        </div>
+        <div class="item">
+          <div class="box" data-aos="flip-right">
+            <img src="../assets/images/customer2.webp" loading="lazy" alt="">
+          </div>
+        </div>
+        <div class="item">
+          <div class="box" data-aos="flip-right">
+            <img src="../assets/images/customer1.webp" loading="lazy" alt="">
+          </div>
+        </div>
+        <div class="item">
+          <div class="box" data-aos="flip-right">
+            <img src="../assets/images/customer2.webp" loading="lazy" alt="">
+          </div>
+        </div>
+        <div class="item">
+          <div class="box" data-aos="flip-right">
+            <img src="../assets/images/customer1.webp" loading="lazy" alt="">
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </section> -->
+  <!-- End Our Customers Section -->
   
 
   <!-- Start Footer -->
    <footer>
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <div class="logo" data-aos="fade-right">
+        <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-left">
+          <div class="logo" >
             <img src="../assets/images/logo.webp" loading="lazy" alt="Logo">
-            <p>مكاتب مؤثثة ومساحات عمل مشتركة</p>
+            <p>Furnished offices and co-working spaces</p>
+ 
+          </div>
+          <div class="follow-us" >
+            <ul>
+              <li><a href=""><img src="../assets/images/facebook.webp"></a></li>
+              <li><a href="https://twitter.com/ovaloffices"><img src="../assets/images/twitter.webp"></a></li>
+              <li><a href="https://www.instagram.com/theovaloffices"><img src="../assets/images/instagram.webp"></a></li>
 
+
+            </ul>
           </div>
         </div>
         <div class="col-lg-4 mb-5 mb-lg-0">
-          <div class="contact" data-aos="fade-right" data-aos-delay="300">
+          <div class="contact" data-aos="fade-left" data-aos-delay="300">
             <h3 class="heading">التواصل</h3>
+            <div class="address">
+              <span>
+                <span class="icon">
+                  <img src="../assets/images/location.webp" loading="lazy" alt="phone">
+                </span>
+                <a href="https://www.google.com/maps/place/Oval+Offices+%7C+%D9%85%D9%83%D8%A7%D8%AA%D8%A8+%D8%A7%D9%88%DA%A4%D9%84%E2%80%AD/@21.5656058,39.185573,17z/data=!4m6!3m5!1s0x15c3d17fa524ff63:0x8868c27a66030775!8m2!3d21.5656848!4d39.1856799!16s%2Fg%2F11scpbs5lw?hl=en-US&entry=ttu">King Fahd Road - Al Faisaliah - Jeddah - Saudi Arabia</a>
+              </span>
+            </div>
             <div class="email">
               <span>
                 <span class="icon">
                   <img src="../assets/images/email.webp" loading="lazy" alt="phone">
                 </span>
-                <a href="mailto:45@gmail.com">sdddsd@gmail.com</a>
+                <a href="mailto:Ovaloffices@gmail.com">Ovaloffices@gmail.com</a>
               </span>
             </div>
             <div class="phone">
@@ -563,22 +708,14 @@
                 <span class="icon">
                   <img src="../assets/images/phone.webp" loading="lazy" alt="phone">
                 </span>
-                <a href="tel:4535434534">45435453</a>
+                <a style="dire" href="tel:+966567892900">0567892900</a>
               </span>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <div class="follow-us" data-aos-delay="600" data-aos="fade-right" >
-            <h3 class="heading">تابعنا</h3>
-            <ul>
-              <li><a href=""><img src="../assets/images/facebook.webp"></a></li>
-              <li><a href=""><img src="../assets/images/twitter.webp"></a></li>
-              <li><a href=""><img src="../assets/images/instagram.webp"></a></li>
-
-
-            </ul>
-          </div>
+    
+        <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-left" data-aos-delay="600">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3710.5202677580996!2d39.185573!3d21.5656058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d17fa524ff63%3A0x8868c27a66030775!2zT3ZhbCBPZmZpY2VzIHwg2YXZg9in2KrYqCDYp9mI2qTZhA!5e0!3m2!1sen!2sus!4v1699289109807!5m2!1sen!2sus"  style="width:100%;height: 300px;border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
@@ -586,13 +723,13 @@
   <!-- End Footer -->
 
 
+      
 
-  
   <!-- Start CopyRight Section -->
   <section class="copyrights text-center">
     <div class="container ">
       <div class="py-4">
-        <span>&copy;جميع الحقوق محفوظة 2023</span>
+        <span>&copy;All rights reserved 2023</span>
 
       </div>
     </div>
@@ -601,7 +738,7 @@
 
   <!--whats App Icon -->
    <div class="whatsapp-icon">
-    <a href="https://wa.me/+966536807677" target="_blank">
+    <a href="https://wa.me/+966567892900" target="_blank">
       <img src="../assets/images/whatsapp.webp" loading="lazy" alt="whatsapp">
     </a>
    </div>
@@ -624,7 +761,7 @@
     <script src="../assets/js/owl.carousel.min.js"></script>
     <script src="../assets/js/aos.js"></script>
     <script src="../assets/js/email.min.js"></script>
-    <script src="../assets/js/sendingEmails.js"></script>
+    <script src="../assets/js/sendingEmails_en.js"></script>
     <script src="../assets/js/main.js"></script>
     <script>
      
