@@ -478,6 +478,7 @@ header video{
         background-color: var(--brand-color);
         transition: all .3s ease-in-out;
         color: #FFF;
+        overflow: scroll;
         
     }
     header .navbar.show ul{
@@ -1051,7 +1052,7 @@ header video{
       max-width: 1200px;
 
       background-color: #FFF;
-      padding:30px;
+      padding:20px 30px ;
       border-radius: 12px;
       transform: translateY(-10px);
       transition: all .3s ease-in-out;
@@ -1059,7 +1060,7 @@ header video{
   
   }
   .our-services .pop-up .inner .row{
-    overflow: scroll;
+    overflow-y: scroll;
     height: 100%;
     padding:0;
   }
@@ -1163,7 +1164,7 @@ header video{
 }
 .our-services .pop-up .inner .images .select-image{
     gap:15px;
-    margin: 30px 0;
+    margin: 30px 0 0 0;
     
 }
 .our-services .pop-up .inner .images .select-image .img{
@@ -1171,6 +1172,7 @@ header video{
     height: 120px; 
     background-color: #000;
     border-radius: 10px;
+    cursor: pointer;
 
    
 } 
@@ -1447,7 +1449,7 @@ header video{
 footer{
     padding: 120px 0;
     background-color: var(--brand-color);
-    background-image:linear-gradient(180deg,#25221a 0%,#25221aeb 100%),url(../images/contact-us-background.webp);
+    background-image:linear-gradient(180deg,#25221a 0%,#25221aeb 100%),url(../images/main_banner.webp);
     background-size: cover  ;
     -webkit-background-attachment: fixed;
     -moz-background-attachment: fixed;
@@ -1510,6 +1512,9 @@ footer .contact .icon{
     background-color: var(--fourth-color);
     margin-left: 10px;
     
+}
+footer .contact .text{
+    width:80%
 }
 footer .contact .icon img{
     width: 20px;

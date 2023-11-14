@@ -140,10 +140,10 @@ submit_button.addEventListener("click",(e)=>{
 
 function sendEmail(){
     (function(){
-        emailjs.init("sKV7QyH9TsieomS2K");
+        emailjs.init("2zpZyfrYYlg0QhJTL");
     })();
-    let serviceID="service_ssu5aus";//email service id
-    let templateID="template_077uiv7";//email template id 
+    let serviceID="service_e91uiql";//email service id
+    let templateID="template_1wdlw95";//email template id 
     let params={
         Name:Name.value,
         Email:Email.value,
