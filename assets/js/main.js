@@ -70,7 +70,7 @@ CloseAsideBtn.addEventListener("click",function(e){
 
 
 // offices Details pop up
-const popUpBtn=document.querySelectorAll(".pop-up-btn");
+const popUpBtn=document.querySelectorAll(".our-services .box");
 
 popUpBtn.forEach(btn=>{
   btn.addEventListener("click",function(){
@@ -115,78 +115,16 @@ popUpBtn.forEach(btn=>{
 
 
 
+//offices details images zooming
 
 
 
 
 
 
-  
-$('#ourServices').owlCarousel({
-    loop: false,
-    margin: 10,
-    nav: true,
-    rewindNav:false,
-    autoplay: false,
-    rtl:true,
-  
-    navText: [
-      "<img src='assets/images/angle-left.webp'>",
-      "<img src='assets/images/angle-right.webp'>"
-    ],
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      500: {
-        items: 2
-      },
-      1000: {
-        items: 4
-      },
-      1600:{
-        items:5
-      }
-    },
-  
-    
-    
-  })
-  
 
-  $('#ourWorks').owlCarousel({
-    loop: false,
-    margin: 10,
-    nav: true,
-    rewindNav:false,
-    autoplay: true,
-    rtl:true,
-  
-    navText: [
-      "<img src='assets/images/angle-left.webp'>",
-      "<img src='assets/images/angle-right.webp'>"
-    ],
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      500: {
-        items: 2
-      },
-      1000: {
-        items: 4
-      },
-      1600:{
-        items:5
-      }
-    },
-  
-    
-    
-  })
-  
+
+
   $('#our-customers').owlCarousel({
     stagePadding: 0,
     rtl:true,
